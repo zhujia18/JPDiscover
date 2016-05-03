@@ -127,7 +127,7 @@
 
 + (JPDiscoverShareModel *)getTestModel {
     JPDiscoverShareModel *testModel = [[JPDiscoverShareModel alloc] init];
-    testModel.thumImageUrl = @"http://imgsrc.baidu.com/forum/w%3D580/sign=c27bcbac00082838680ddc1c8899a964/c98ce00e7bec54e7d3d57aadbe389b504ec26af8.jpg";
+    testModel.thumImageUrl = @"http://www.ld12.com/upimg358/allimg/c120901/13464W55104250-106417.jpg";
     testModel.title = @"一个iOS入门程序猿";
     testModel.summary = @"弱弱的打个广告QQ群：151853771。博客：http://zasper.net";
     return testModel;

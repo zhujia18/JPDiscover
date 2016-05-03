@@ -26,7 +26,7 @@
     
     _dataSource = [[NSMutableArray alloc] init];
     
-    _listTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) - 20) style:UITableViewStylePlain];
+    _listTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) - 20) style:UITableViewStylePlain];
     _listTable.dataSource = self;
     _listTable.delegate = self;
     [_listTable setBackgroundColor:[UIColor clearColor]];
