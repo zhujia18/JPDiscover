@@ -26,6 +26,9 @@
 		A4D7E41E1CA50D790045B3E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D7E41C1CA50D790045B3E5 /* LaunchScreen.storyboard */; };
 		A4D7E42B1CA519250045B3E5 /* JPDiscoverCellBaseModule.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D7E42A1CA519250045B3E5 /* JPDiscoverCellBaseModule.m */; };
 		A4D7E42E1CA51D330045B3E5 /* JPDiscoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D7E42D1CA51D330045B3E5 /* JPDiscoverModel.m */; };
+		A4E9EEDF1CD7B57B00DFF357 /* JPSlideViewControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E9EEDE1CD7B57B00DFF357 /* JPSlideViewControllerView.m */; };
+		A4E9EEE21CD7B67400DFF357 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E9EEE11CD7B67400DFF357 /* RootViewController.m */; };
+		A4E9EEE71CD7BBDF00DFF357 /* JPSlideSegmentMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E9EEE61CD7BBDF00DFF357 /* JPSlideSegmentMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,13 @@
 		A4D7E42A1CA519250045B3E5 /* JPDiscoverCellBaseModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDiscoverCellBaseModule.m; sourceTree = "<group>"; };
 		A4D7E42C1CA51D330045B3E5 /* JPDiscoverModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDiscoverModel.h; sourceTree = "<group>"; };
 		A4D7E42D1CA51D330045B3E5 /* JPDiscoverModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDiscoverModel.m; sourceTree = "<group>"; };
+		A4E9EEDD1CD7B57B00DFF357 /* JPSlideViewControllerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSlideViewControllerView.h; sourceTree = "<group>"; };
+		A4E9EEDE1CD7B57B00DFF357 /* JPSlideViewControllerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSlideViewControllerView.m; sourceTree = "<group>"; };
+		A4E9EEE01CD7B67400DFF357 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		A4E9EEE11CD7B67400DFF357 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		A4E9EEE31CD7B92B00DFF357 /* GlobalMacroDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalMacroDefinition.h; sourceTree = "<group>"; };
+		A4E9EEE51CD7BBDF00DFF357 /* JPSlideSegmentMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSlideSegmentMenu.h; sourceTree = "<group>"; };
+		A4E9EEE61CD7BBDF00DFF357 /* JPSlideSegmentMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSlideSegmentMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +111,13 @@
 			children = (
 				A4D7E4111CA50D780045B3E5 /* AppDelegate.h */,
 				A4D7E4121CA50D790045B3E5 /* AppDelegate.m */,
+				A4E9EEE31CD7B92B00DFF357 /* GlobalMacroDefinition.h */,
+				A4E9EEE01CD7B67400DFF357 /* RootViewController.h */,
+				A4E9EEE11CD7B67400DFF357 /* RootViewController.m */,
 				A4D7E4141CA50D790045B3E5 /* ViewController.h */,
 				A4D7E4151CA50D790045B3E5 /* ViewController.m */,
+				A4E9EEE41CD7BBC700DFF357 /* JPSlideSegmentMenu */,
+				A4E9EEDC1CD7B42500DFF357 /* JPSlideViewControllerView */,
 				A4D7E4261CA516470045B3E5 /* Discover */,
 				A4D7E4171CA50D790045B3E5 /* Main.storyboard */,
 				A4D7E41A1CA50D790045B3E5 /* Assets.xcassets */,
@@ -172,6 +187,24 @@
 				A4D7E42D1CA51D330045B3E5 /* JPDiscoverModel.m */,
 			);
 			name = DiscoverModel;
+			sourceTree = "<group>";
+		};
+		A4E9EEDC1CD7B42500DFF357 /* JPSlideViewControllerView */ = {
+			isa = PBXGroup;
+			children = (
+				A4E9EEDD1CD7B57B00DFF357 /* JPSlideViewControllerView.h */,
+				A4E9EEDE1CD7B57B00DFF357 /* JPSlideViewControllerView.m */,
+			);
+			name = JPSlideViewControllerView;
+			sourceTree = "<group>";
+		};
+		A4E9EEE41CD7BBC700DFF357 /* JPSlideSegmentMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A4E9EEE51CD7BBDF00DFF357 /* JPSlideSegmentMenu.h */,
+				A4E9EEE61CD7BBDF00DFF357 /* JPSlideSegmentMenu.m */,
+			);
+			name = JPSlideSegmentMenu;
 			sourceTree = "<group>";
 		};
 		CCCC57F6BA25A3781AA42E5D /* Frameworks */ = {
@@ -317,8 +350,10 @@
 				A443A0321CA52A930061DF5A /* JPDiscoverCellTitleModule.m in Sources */,
 				A4D7E4161CA50D790045B3E5 /* ViewController.m in Sources */,
 				A443A03E1CA52B3A0061DF5A /* JPDiscoverCellShareModule.m in Sources */,
+				A4E9EEDF1CD7B57B00DFF357 /* JPSlideViewControllerView.m in Sources */,
 				A4D7E4131CA50D790045B3E5 /* AppDelegate.m in Sources */,
 				A443A03B1CA52B0C0061DF5A /* JPDiscoverCellImageModule.m in Sources */,
+				A4E9EEE71CD7BBDF00DFF357 /* JPSlideSegmentMenu.m in Sources */,
 				A4D7E42B1CA519250045B3E5 /* JPDiscoverCellBaseModule.m in Sources */,
 				A4D7E4101CA50D780045B3E5 /* main.m in Sources */,
 				A443A0381CA52AEC0061DF5A /* JPDiscoverCellCommentModule.m in Sources */,
@@ -327,6 +362,7 @@
 				A49101071CA7A53A0024B204 /* JPDiscoverFullStyleTableViewCell.m in Sources */,
 				A443A0351CA52AD80061DF5A /* JPDiscoverCellContentModule.m in Sources */,
 				A49101041CA79D7A0024B204 /* JPDiscoverBaseTableViewCell.m in Sources */,
+				A4E9EEE21CD7B67400DFF357 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
