@@ -88,7 +88,7 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     headIcon.frame = CGRectMake(12, 10, 30, 30);
-    CGSize usernameSize = [username.text sizeWithFont:username.font constrainedToSize:CGSizeMake(CGFLOAT_MAX, 15) lineBreakMode:username.lineBreakMode];
+    CGSize usernameSize = [username.text boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, 15) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:username.font} context:nil].size;
     username.frame = CGRectMake(CGRectGetMaxX(headIcon.frame) + 10, 10, usernameSize.width, usernameSize.height);
     time.frame = CGRectMake(CGRectGetMaxX(headIcon.frame) + 10, CGRectGetMaxY(username.frame) + 5, 90, 11);
 }

@@ -60,7 +60,7 @@
     UIButton *selectButton = [titleButtons objectAtIndex:index];
     NSString *selectTitle = selectButton.titleLabel.text;
     UIFont *selectFont = selectButton.titleLabel.font;
-    CGFloat titleStrWidth = [selectTitle sizeWithFont:selectFont constrainedToSize:CGSizeMake(CGFLOAT_MAX, selectFont.lineHeight) lineBreakMode:0].width;
+    CGFloat titleStrWidth = [selectTitle boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, selectFont.lineHeight) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:selectFont} context:nil].size.width;
     CGFloat buttonWidth = CGRectGetWidth(selectButton.frame);
     CGFloat newOriginX = (buttonWidth - titleStrWidth) / 2 + index * buttonWidth;
     line.frame = CGRectMake(newOriginX, CGRectGetHeight(self.frame) - 2, titleStrWidth, 2);
@@ -70,7 +70,7 @@
     UIButton *selectButton = [titleButtons objectAtIndex:index];
     NSString *selectTitle = selectButton.titleLabel.text;
     UIFont *selectFont = selectButton.titleLabel.font;
-    CGFloat titleStrWidth = [selectTitle sizeWithFont:selectFont constrainedToSize:CGSizeMake(CGFLOAT_MAX, selectFont.lineHeight) lineBreakMode:0].width;
+    CGFloat titleStrWidth = [selectTitle boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, selectFont.lineHeight) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:selectFont} context:nil].size.width;
     CGFloat buttonWidth = CGRectGetWidth(selectButton.frame);
     CGFloat newOriginX = (buttonWidth - titleStrWidth) / 2 + index * buttonWidth;
     CGFloat oldOriginX = CGRectGetMinX(line.frame);

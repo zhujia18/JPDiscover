@@ -47,19 +47,19 @@
 #pragma mark getter
 
 - (CGFloat)height {
-    CGFloat totalHeight = [dataSource.content sizeWithFont:contentLabel.font constrainedToSize:CGSizeMake(width - 30, CGFLOAT_MAX) lineBreakMode:contentLabel.lineBreakMode].height;
+    CGFloat totalHeight = [dataSource.content boundingRectWithSize:CGSizeMake(width - 30, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:contentLabel.font} context:nil].size.height;
     totalHeight += 10;//设计图下间距10px
     return totalHeight;
 }
 
 + (CGFloat)countHeightWithModel:(JPDiscoverModel *)model width:(CGFloat)width {
-    CGFloat totalHeight = [model.contentModel.content sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(width - 30, CGFLOAT_MAX) lineBreakMode:0].height;
+    CGFloat totalHeight = [model.contentModel.content boundingRectWithSize:CGSizeMake(width - 30, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14]} context:nil].size.height;
     totalHeight += 10;//设计图下间距10px
     return totalHeight;
 }
 
 - (void)refreshViewData {
-    CGFloat totalHeight = [dataSource.content sizeWithFont:contentLabel.font constrainedToSize:CGSizeMake(width - 30, CGFLOAT_MAX) lineBreakMode:contentLabel.lineBreakMode].height;
+    CGFloat totalHeight = [dataSource.content boundingRectWithSize:CGSizeMake(width - 30, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:contentLabel.font} context:nil].size.height;
     contentLabel.frame = CGRectMake(CGRectGetMinX(contentLabel.frame), CGRectGetMinY(contentLabel.frame), CGRectGetWidth(contentLabel.frame), totalHeight);
     contentLabel.text = dataSource.content;
 }
